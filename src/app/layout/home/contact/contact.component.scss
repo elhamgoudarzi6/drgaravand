@@ -1,0 +1,157 @@
+.ftco-section {
+  padding: 7em 0;
+}
+
+.ftco-no-pt {
+  padding-top: 0;
+}
+
+.ftco-no-pb {
+  padding-bottom: 0;
+}
+
+.heading-section {
+  font-size: 28px;
+  color: #000;
+}
+
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.form-control {
+  height: 50px;
+  background: transparent;
+  color: rgba(255, 255, 255, 1) !important;
+  font-size: 14px;
+  border-radius: 0px;
+  box-shadow: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.form-control:focus,
+.form-control:active {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+button[type="submit"] {
+  background: none;
+  padding: 8px 40px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+button[type="submit"]:hover {
+  background: #fff;
+  color: #356c77;
+}
+
+textarea.form-control {
+  height: inherit !important;
+}
+
+.wrapper {
+  width: 100%;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 21px 41px -13px rgba(0, 0, 0, 0.18) !important;
+
+}
+
+.contact-wrap {
+  width: 100%;
+  position: relative;
+  border-radius: 20px;
+  background-size: cover;
+  box-shadow: 0px 10px 10px -13px rgba(#356c77, 0.7) !important;
+  background: linear-gradient(90deg, #5ac39e 0%, #509299 100%);
+}
+
+.info-wrap h3 {
+  font-size: 20px;
+}
+
+.contact-wrap h3 {
+  color: #fff;
+  font-size: 18px;
+  font-family: IRANSans_Light !important;
+}
+
+.info-wrap h3 {
+  color: #5ac39e;
+  position: relative;
+}
+
+.info-wrap h3:after {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: calc(50% - 50px);
+  height: 1px;
+  background: #5ac39e;
+  content: '';
+}
+
+.info-wrap .dbox {
+  width: 100%;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.info-wrap .dbox:last-child {
+  margin-bottom: 0;
+}
+
+.info-wrap .dbox p {
+  margin-bottom: 0;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.info-wrap .dbox .icon {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  backdrop-filter: blur(30px);
+
+}
+
+.info-wrap .dbox .icon::after {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  content: '';
+  border-radius: 10px;
+  border: 2px dotted #62d5a3;
+  z-index: -1;
+  transform: rotate(45deg);
+  background: linear-gradient(360deg, #5ac39e 0%, #356c77 100%);
+  
+}
+
+.info-wrap .dbox .icon i {
+  font-size: 27px;
+  color: #fff;
+}
+
+.info-wrap .dbox .text {
+  width: calc(100% - 50px);
+}
+
+.contactForm .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(#fff, 0.3);
+  padding: 0;
+}

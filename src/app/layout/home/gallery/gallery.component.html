@@ -1,0 +1,16 @@
+<section id="gallery" class="container-fluid">
+    <div class="gallery">
+        <h1 class="text-center ">گالری</h1>
+        <p-carousel [value]="images" [numVisible]="4" [numScroll]="1" [responsiveOptions]="responsiveOptions"
+            [autoplayInterval]="5000">
+            <ng-template let-item pTemplate="item">
+                <div class="box">
+                    <img [src]="item.url" />
+                    <div class="text">
+                        تست
+                    </div>
+                </div>
+            </ng-template>
+        </p-carousel>
+    </div>
+</section>

@@ -1,0 +1,68 @@
+.sidenav-container {
+  height: 100%;
+  width: 100%;
+}
+
+.sidenav {
+  width: 230px;
+  background: #005073;
+  border-left: none;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+}
+
+
+.profile {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: 5px;
+}
+
+:host::ng-deep .mat-divider {
+  border-color: #f3f3f3;
+  margin: 0 10px;
+}
+
+
+:host::ng-deep .pi-chevron-right:before {
+  content: "\e900";
+}
+
+:host::ng-deep .p-toolbar {
+  background: #005073;
+  height: 70px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%) !important;
+}
+
+h6 {
+  font-family: IRANSans_Light !important;
+  font-size: 16px;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header {
+  margin: 5px 15px;
+}
+
+:host::ng-deep .p-panelmenu-content {
+  background-color: transparent !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
+  background-color: transparent;
+  color: #fff;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action {
+  font-family: IRANSans_Light !important;
+  font-size: 16px;
+  color: #fff;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action:hover {
+  border-radius: 5px;
+  color: #005073 !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action .p-menuitem-icon {
+  margin-left: 5px;
+}

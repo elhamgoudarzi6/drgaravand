@@ -1,0 +1,36 @@
+<div id="scroll" class="header fixed-top">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-1 text-center">
+      <a><img src="../../../../assets/images/logo2.png" alt="کلینیک احسان گراوند" class="img-fluid"></a>
+    </div>
+    <div class="col justify-content-center">
+      <nav id="navbar" class="navbar order-last order-lg-0 justify-content-center">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">صفحه اصلی</a></li>
+          <li><a class="nav-link scrollto" href="#faq">سوالات متداول</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">گالری</a></li>
+          <li><a class="nav-link scrollto" href="#about">درباره</a></li>
+          <li><a class="nav-link scrollto" href="#contact">ارتباط با ما</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="col-1">
+    </div>
+  </div>
+</div>
+
+<header id="mscroll" class="mobileheader fixed-top">
+  <div class="container-fluid d-flex flex-row align-items-center justify-content-between">
+    <i class="bi bi-list mobile-nav-toggle mr-5" (click)="showMenu()"></i>
+    <a href="#"><img src="../../../../assets/images/logo2.png" alt="" class="logo ml-5"></a>
+  </div>
+</header>
+
+<p-sidebar [(visible)]="display" [style]="{ width: '55%' }" position="right" [showCloseIcon]="true"
+  [baseZIndex]="10000">
+  <div class="d-flex flex-column">
+    <div class="mb-auto">
+      <p-panelMenu [model]="items" [style]="{ width: '100%' }"></p-panelMenu>
+    </div>
+  </div>
+</p-sidebar>

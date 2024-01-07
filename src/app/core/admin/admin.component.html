@@ -1,0 +1,25 @@
+<mat-drawer-container class="sidenav-container" dir="rtl">
+  <mat-drawer #drawer mode="side" class="sidenav" opened>
+    <div class="text-center">
+      <p-avatar *ngIf="image==undefined" icon="pi pi-user" size="xlarge" styleClass="mt-3"
+        [style]="{'background-color': '#eff3f8','color':'#e2e2e2'}" shape="circle"></p-avatar>
+      <p-avatar *ngIf="image!=undefined" [image]="image" styleClass="mr-2" size="xlarge" shape="circle"></p-avatar>
+      <h6 class="mt-2">{{fullName}}</h6>
+    </div>
+    <p-panelMenu [model]="items" [style]="{'width':'100%','margin-top':'40px'}"></p-panelMenu>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class=" shadow-1 flex justify-content-between flex-wrap">
+      <div class="align-items-center justify-content-start">
+        <button pButton pRipple type="button" icon="pi pi-bars" class="p-button-rounded p-button-text"
+          (click)="drawer.toggle()"></button>
+      </div>
+      <div class="align-items-center justify-content-end">
+        <button pButton pRipple type="button" icon="pi pi-power-off" class="p-button-rounded p-button-text"
+          (click)="logOut()"></button>
+      </div>
+    </div>
+    <ng-content> </ng-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

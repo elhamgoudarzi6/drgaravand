@@ -1,0 +1,78 @@
+.card {
+  padding: 25px;
+}
+
+h6 {
+  color: #777;
+  font-family: IRANSans_Light !important;
+}
+
+:host::ng-deep .p-breadcrumb {
+  margin: 20px 20px 0;
+}
+
+:host::ng-deep .p-breadcrumb .p-icon {
+  display: none;
+}
+
+:host::ng-deep .p-breadcrumb .p-breadcrumb-list li:last-child .p-menuitem-icon {
+  margin-right: -10px;
+  margin-left: 5px;
+}
+
+:host::ng-deep .p-progressbar-determinate .p-progressbar-value {
+  font-family: IRANSans_Light !important;
+}
+
+:host::ng-deep .p-scrollpanel .p-scrollpanel-bar {
+  background-color: black !important;
+}
+
+:host::ng-deep .p-orderlist {
+ // margin-top: 10px;
+  font-size: 12px;
+  font-family: IRANSans_Light !important;
+  font-weight: normal !important;
+}
+
+:host::ng-deep .p-dataView {
+  padding: 10px 15px;
+  font-weight: normal !important;
+
+}
+
+:host::ng-deep .p-orderlist .p-orderlist-header .p-orderlist-title {
+  font-family: IRANSans_Light !important;
+  font-size: 14px;
+  font-weight: normal !important;
+
+}
+
+:host::ng-deep .p-divider {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+h5 {
+  font-size: 14px;
+  color: #888;
+  font-family: IRANSans_Light !important;
+
+}
+
+
+:host::ng-deep .p-orderlist .p-orderlist-filter-container .p-orderlist-filter-icon {
+  display: none;
+}
+
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+.p-inputtext,
+.p-dropdown,
+.p-chips,
+textarea {
+  height: 40px;
+  font-family: IRANSans_Light !important;
+}

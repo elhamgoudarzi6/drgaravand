@@ -1,0 +1,147 @@
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+@font-face {
+  font-family: 'IRANSans_Bold';
+  src: url('./assets/fonts/IRANSansWeb\(FaNum\)_Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANSans_Light';
+  src: url('./assets/fonts/IRANSansWeb\(FaNum\)_Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./assets/flaticon/font/Flaticon.eot");
+  src: url("./assets/flaticon/font/Flaticon.eot?#iefix") format("embedded-opentype"),
+    url("./assets/flaticon/font/Flaticon.woff") format("woff"),
+    url("./assets/flaticon/font/Flaticon.ttf") format("truetype"),
+    url("./assets/flaticon/font/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before,
+[class^="flaticon-"]:after,
+[class*=" flaticon-"]:after {
+  font-family: Flaticon;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-tooth-1:before {
+  content: "\f100";
+}
+
+.flaticon-anesthesia:before {
+  content: "\f101";
+}
+
+.flaticon-tooth-with-braces:before {
+  content: "\f102";
+}
+
+.flaticon-dentist:before {
+  content: "\f103";
+}
+
+.flaticon-tooth:before {
+  content: "\f104";
+}
+
+.flaticon-dental-care-1:before {
+  content: "\f105";
+}
+
+.flaticon-dental-care:before {
+  content: "\f106";
+}
+
+.flaticon-bacteria:before {
+  content: "\f107";
+}
+
+:root {
+  --color1: #689F38;
+  --color2: #f45050;
+  --color3: #9c9c9c;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+body {
+  font-family: IRANSans_Light !important;
+  font-size: 14px;
+  line-height: 1.7;
+  direction: rtl;
+  background-color: #e3e3e6;
+  background-color: #eff3f8;
+  color: rgba(0, 0, 0, .87);
+}
+
+
+
+a,
+a:hover {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+button,
+input,
+textarea,
+td,
+th,
+small {
+  font-family: IRANSans_Bold !important;
+}
+
+*:focus-within {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

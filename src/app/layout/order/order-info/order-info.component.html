@@ -1,0 +1,38 @@
+<p-toast position="center"></p-toast>
+<section class="container py-5 px-lg-5">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12 mb-3">
+                <input type="text" pInputText placeholder="عنوان سفارش" formControlName="title" required />
+            </div>
+            <!-- <div class="col-lg-3 col-sm-12 mb-3">
+                <p-dropdown [options]="products" placeholder="انتخاب محصول" formControlName="productID"
+                    optionValue="_id" optionLabel="title"></p-dropdown>
+            </div> -->
+            <div class="col-lg-3 col-sm-12 mb-3 ">
+                <p-inputNumber class="w-100" formControlName="number" [showButtons]="true" placeholder="تعداد"
+                    buttonLayout="horizontal" inputId="horizontal" spinnerMode="horizontal" [step]="1"
+                    decrementButtonClass="p-button-danger" incrementButtonClass="p-button-success"
+                    incrementButtonIcon="pi pi-plus" decrementButtonIcon="pi pi-minus" mode="decimal" [min]="1"
+                    [max]="100000000000"></p-inputNumber>
+            </div>
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <p-dropdown [options]="units" placeholder="واحد" formControlName="unit" optionLabel="title"
+                    optionValue="title"></p-dropdown>
+            </div>
+            <div class="upload col-lg-12 col-sm-12 mb-3">
+                <p-fileUpload [customUpload]="true" (uploadHandler)="onFileUpload($event)" chooseLabel="انتخاب فایل"
+                    uploadLabel="آپلود" cancelLabel="انصراف" accept=".pdf,.jpg,.png"
+                    invalidFileSizeMessageDetail="حداکثر سایز فایل 2 مگابایت می باشد"
+                    invalidFileSizeMessageSummary="اندازه فایل بیش از حد مجاز می باشد" [maxFileSize]="10000000">
+                </p-fileUpload>
+            </div>
+            <div class="col-lg-12 col-sm-12 mb-3">
+                <textarea rows="5" placeholder="توضیحات" pInputTextarea formControlName="description"></textarea>
+            </div>
+            <div pRipple class="col-lg-12 text-center mt-2">
+                <button class="btn btn-primary mt-2" type="submit" [disabled]="!form.valid">ثبت سفارش</button>
+            </div>
+        </div>
+    </form>
+</section>

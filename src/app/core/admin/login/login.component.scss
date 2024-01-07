@@ -1,0 +1,61 @@
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+  font-size: 16px;
+  font-family: IRANSans_Bold !important;
+  margin-top: 15px;
+}
+
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+  font-size: 16px;
+  font-family: IRANSans_Light !important;
+}
+
+:host::ng-deep .p-toast .p-toast-message.p-toast-message-error .p-toast-message-icon,
+.p-toast .p-toast-message.p-toast-message-error .p-toast-icon-close {
+  margin-left: 5px;
+}
+
+:host::ng-deep .p-button {
+  font-size: 14px;
+  font-family: IRANSans_Bold !important;
+  padding: 10px;
+  background-color: #5ac39e;
+  border-color: #5ac39e;
+}
+
+:host::ng-deep .p-button:hover {
+  background-color: #4bb38e;
+  border-color: #4bb38e;
+}
+
+label {
+  right:  10px;
+  left: unset;
+}
+
+@media (max-width: 992px) {
+  .card {
+    padding: 10px 55px 30px;
+    margin: 0 10px;
+  }
+
+  .card img {
+    max-width: 60%;
+    margin: 15px 0 30px;
+  }
+
+  .card h4 {
+    font-size: 14px;
+  }
+}
+
+
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+.p-inputtext,
+.p-dropdown,
+.p-chips,
+textarea {
+  width: 100% !important;
+}

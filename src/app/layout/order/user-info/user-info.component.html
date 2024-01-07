@@ -1,0 +1,39 @@
+<p-toast position="center"></p-toast>
+
+<section class="container py-5 px-lg-5">
+    <form [formGroup]="form" (ngSubmit)="submitForm()">
+        <div class="row align-items-center">
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <label class="form-label">شماره همراه</label>
+                <input type="text" pInputText formControlName="mobile" />
+            </div>
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <label class="form-label">نام شرکت</label>
+                <input type="text" pInputText formControlName="companyName" />
+            </div>
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <label class="form-label">ایمیل</label>
+                <input type="text" pInputText formControlName="email" />
+            </div>
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <label class="form-label">تاریخ تولد</label>
+                <input type="text" pInputText formControlName="birthDate" />
+            </div>
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <label class="form-label">کشور</label>
+                <input type="text" pInputText formControlName="country" />
+            </div>
+            <div class="col-lg-3 col-sm-12 mb-3">
+                <label class="form-label">شهر</label>
+                <input type="text" pInputText formControlName="city" />
+            </div>
+            <div class="col-lg-6 col-sm-12 mb-3">
+                <label class="form-label">آدرس</label>
+                <input type="text" pInputText formControlName="address" />
+            </div>
+            <div class="col-lg-12 text-center mt-5">
+                <p-button type="submit" [disabled]="!form.valid"  label="مرحله بعد"></p-button>
+            </div>
+        </div>
+    </form>
+</section>

@@ -1,0 +1,125 @@
+:host::ng-deep .p-button {
+  font-size: 14px;
+  font-family: IRANSans_Bold !important;
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  border-color: #ffe134;
+  padding: 10px 55px;
+}
+
+:host::ng-deep .p-button:hover {
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  border-color: #ffe134;
+}
+
+
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-summary {
+  font-size: 16px;
+  font-family: IRANSans_Light !important;
+  margin-right: 5px;
+}
+
+:host::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+  font-size: 16px;
+  font-family: IRANSans_Light !important;
+}
+
+:host::ng-deep .p-toast .p-toast-message.p-toast-message-error .p-toast-message-icon,
+.p-toast .p-toast-message.p-toast-message-error .p-toast-icon-close {
+  margin-left: 5px;
+}
+
+:host::ng-deep .p-inputtext {
+  color: #777;
+  font-size: 12px;
+  font-family: IRANSans_Bold !important;
+}
+
+:host::ng-deep .p-inputtext::placeholder {
+  color: #777;
+  font-size: 12px;
+  padding-right: 5px;
+  font-family: IRANSans_Bold !important;
+}
+
+.card p {
+  font-size: 13px;
+  font-family: IRANSans_Light !important;
+}
+
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+.p-inputtext,
+.p-dropdown,
+.p-chips,
+textarea {
+  width: 100% !important;
+}
+
+.verify {
+  padding: 5px 45px;
+}
+
+.verify p {
+  color: #777;
+  font-size: 14px;
+  font-family: IRANSans_Bold !important;
+  text-align: center;
+}
+
+.verify a {
+  color: #777;
+  font-size: 14px;
+  font-family: IRANSans_Bold !important;
+}
+
+
+.gradient {
+  background: #fccb90;
+  // background: linear-gradient(45deg, #ee7724, #d8363a, #dd3675, #b44593);
+  background: linear-gradient(45deg, #ffe134 0%, #ff9e28 100%);
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .gradient {
+    border-top-left-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .gradient {
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+  }
+
+  img {
+    max-width: 160px;
+  }
+
+  .input {
+    padding: 20px 95px;
+  }
+}
+
+.input {
+  padding: 10px 15px;
+}
+
+.btn {
+  background: linear-gradient(45deg, #ffe134 0%, #ff9e28 100%);
+  border: none;
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 18px;
+}

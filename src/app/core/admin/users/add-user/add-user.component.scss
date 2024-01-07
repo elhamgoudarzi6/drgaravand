@@ -1,0 +1,21 @@
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+.p-inputtext,
+.p-dropdown,
+.p-chips,
+textarea {
+  width: 100% !important;
+}
+:host::ng-deep .p-button {
+  font-size: 14px;
+  font-family: IRANSans_Bold !important;
+  padding: 10px 55px;
+}
+:host::ng-deep .p-button .p-button-label{
+margin-right: 5px;
+}
+:host::ng-deep .p-inputtext{
+  font-size: 12px;
+  }

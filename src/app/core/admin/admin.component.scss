@@ -1,0 +1,51 @@
+.sidenav-container {
+  height: 100%;
+  width: 100%;
+}
+
+.sidenav {
+  width: 230px;
+  background-color: #fff;
+  border-left: none !important;
+}
+
+.flex-wrap {
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+h6 {
+  font-family: IRANSans_Light !important;
+  font-size: 16px;
+}
+
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header {
+  margin: 1% 10%;
+}
+
+:host::ng-deep .p-panelmenu-content {
+  background-color: transparent !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content {
+  // background-color: transparent;
+}
+
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header-action {
+  font-family: IRANSans_Light !important;
+  font-size: 13px;
+  color: #111;
+  padding: 12px 10px!important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header-action:hover {
+  border-radius: 5px;
+  background: #eff3f8 !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action .p-menuitem-icon {
+  margin-left: 8px;
+}

@@ -1,0 +1,82 @@
+.ftco-quote {
+    padding: 0;
+}
+
+.ftco-quote .choose p,
+.ftco-quote .choose li {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.ftco-quote .un-styled {
+    padding: 0;
+}
+
+.ftco-quote .un-styled li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.ftco-quote .un-styled li span {
+    color: #fff;
+    margin-right: 10px;
+}
+
+.staff {
+    width: 100%;
+    display: block;
+    padding: 25px;
+    border: 1px solid #dedede;
+    border-top-right-radius:45%;
+    border-top-left-radius:45%;
+    box-shadow: 0px 3px 30px 5px rgba(#777, 0.1);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 767.98px) {
+    .staff {
+        margin-bottom: 30px;
+    }
+}
+
+.staff .info {
+    width: 100%;
+}
+
+.staff .info h3 {
+    font-size: 18px;
+}
+
+.staff .info h3 a {
+    color: #000;
+}
+
+.staff .info span.position {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #2f89fc;
+}
+
+.staff .img {
+    width: 180px;
+    height: 180px;
+    transition: all 0.3s ease;
+}
+
+.staff .text .ftco-social {
+    padding: 0;
+}
+
+.staff .text .ftco-social li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.staff:hover,
+.staff:focus {
+    -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
+}

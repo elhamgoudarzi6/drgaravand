@@ -1,0 +1,74 @@
+.form-label {
+    font-size: 14px;
+    font-family: IRANSans_Bold !important;
+    color: #777;
+    margin-left: 10px;
+}
+
+:host::ng-deep .p-button {
+    font-size: 14px;
+    font-family: IRANSans_Bold !important;
+    background:#7f7f7f !important;
+    border-color: #7f7f7f;
+    padding: 10px 55px;
+}
+
+:host::ng-deep .p-button:hover {
+    border-color: #7f7f7f;
+}
+
+
+input[type="text"] {
+    height: 45px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: IRANSans_Bold !important;
+}
+
+input[type="text"]::placeholder {
+    color: #777;
+    font-size: 12px;
+    padding-right: 5px;
+    font-family: IRANSans_Bold !important;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffe134;
+}
+::ng-deep .ng-persian-datepicker .datepicker-outer-container {
+    position: absolute;
+    top: 43px;
+    right: -10px;
+    z-index: 1000;
+  }
+
+  .input-container i {
+    padding: 15px 5px;
+    background: dodgerblue;
+    color: white;
+    width: 30px;
+    text-align: center;
+    border-radius: 2px;
+  }
+input,
+:host::ng-deep .p-inputtext,
+:host::ng-deep .p-dropdown,
+:host::ng-deep .p-chips,
+.p-inputtext,
+.p-dropdown,
+.p-chips,
+textarea {
+    width: 100% !important;
+}
+
+
+textarea {
+    font-family: IRANSans_Light !important;
+    font-size: 14px;
+}
+
+:host::ng-deep textarea::placeholder {
+    font-family: IRANSans_Light !important;
+    font-size: 14px;
+}

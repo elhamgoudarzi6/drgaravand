@@ -1,0 +1,64 @@
+.gallery {
+  direction: ltr;
+  padding: 30px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.18) !important;
+  border-radius: 5px;
+}
+
+.gallery h1 {
+  font-family: IRANSans_Bold !important;
+  margin-bottom: 30px;
+}
+
+.gallery img {
+  max-width: 99%;
+  border-radius: 5px;
+}
+
+.box {
+  position: relative;
+  text-align: center;
+}
+.text {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  background-color: rgb(255 255 255 / 0.5);
+  backdrop-filter: blur(55px);
+  padding: 5px 30px;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  font-family: IRANSans_Bold !important;
+}
+
+:host::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: #5cc89d;
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+:host::ng-deep .p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  border-radius: 20px;
+  margin-top: 15px;
+}
+
+::ng-deep .p-carousel .p-carousel-header {
+  margin-bottom: 15px;
+  font-family: 'IRANSans_Bold' !important;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-prev {
+  background-color: #f3f3f3 !important;
+}
+
+::ng-deep .p-carousel .p-carousel-content .p-carousel-next {
+  background-color: #f3f3f3 !important;
+}
+
+@media (max-width: 991px) {
+  .gallery {
+    padding: 5px;
+  }
+}

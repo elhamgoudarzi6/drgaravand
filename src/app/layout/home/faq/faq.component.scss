@@ -1,0 +1,53 @@
+.faq{
+  padding: 30px 0;  
+}
+.faq h1 {
+    font-family: IRANSans_Bold !important;
+    margin: 20px 0 30px;
+    align-items: center;
+    font-size: 24px;
+    color: #000;
+}
+
+
+:host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+    font-family: IRANSans_Bold !important;
+    font-size: 14px !important;
+    border-radius: 15px;
+    color: #5ac39e!important;
+    background-color: #fff;
+    border: 2px dotted rgba(#5ac39e, 0.8) !important;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link:hover {
+  background:rgba( #5ac39e,.1) !important;
+   // color: #fff !important;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header:not(.p-disabled).p-highlight .p-accordion-header-link {
+    background: #f8fbff !important;
+    border-radius: 5px;
+    color: #fff !important;
+    color: #5ac39e!important;
+
+}
+
+:host::ng-deep .p-accordion-content {
+    color: #000 !important;
+    font-family: IRANSans_Light !important;
+    font-size: 16px;
+}
+
+:host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
+    padding-left: 30px !important;
+}
+
+@media (max-width: 991px) {
+    :host::ng-deep .p-accordion .p-accordion-header .p-accordion-header-link {
+        font-size: 12px !important;
+    }
+
+    :host::ng-deep .p-accordion-content {
+        font-size: 12px;
+    }
+}

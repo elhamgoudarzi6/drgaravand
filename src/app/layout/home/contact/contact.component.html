@@ -1,0 +1,196 @@
+<!-- <p-toast position="center"></p-toast>
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h1 class="section-title">{{'contactus'| translate}}</h1>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6 align-items-center">
+                <div class="row">
+                    <div class="col-lg-6 info">
+                        <i class="bx bx-map"></i>
+                        <h4>Address</h4>
+                        <p>مطهری خیابان آیت اله کاشانی نرسیده به پل دارایی زاده طبقه فوقانی کلینیک لبخند</p>
+                    </div>
+                    <div class="col-lg-6 info">
+                        <i class="bx bx-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>06633318720-4<br />06633318720-4</p>
+                    </div>
+                    <div class="col-lg-6 info">
+                        <i class="bx bx-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>info@managol.co<br>contact@managol.co</p>
+                    </div>
+                    <div class="col-lg-6 info">
+                        <i class="bx bx-time-five"></i>
+                        <h4>Working Hours</h4>
+                        <p>شنبه - چهارشنبه
+                            <br>8 صبح الی 16 عصر
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  align-items-center contact-form-wrap">
+                <form class="form mt-4" [formGroup]="form" (ngSubmit)="sendMessage()">
+                    <div class="row">
+                        <div class="col-lg-6 mb-3">
+                            <input type="text" placeholder="نام و نام خانوادگی" formControlName="fullName"
+                                class="form-control" required />
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input type="email" placeholder="ایمیل" formControlName="email" class="form-control"
+                                required />
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input type="text" placeholder="موبایل" pKeyFilter="num" maxlength="11" minlength="11"
+                                formControlName="mobile" class="form-control" required />
+                        </div>
+                        <div class="col-lg-6 mb-3">
+                            <input type="text" placeholder="عنوان" formControlName="title" class="form-control"
+                                required />
+                        </div>
+                        <div class="col-lg-12 mb-3">
+                            <textarea placeholder="پیام" formControlName="message" class="form-control" rows="4"
+                                required></textarea>
+                        </div>
+                        <div *ngFor="let error of errorMessages.fullName" class="pt-1">
+                            <p class="alert alert-danger"
+                                *ngIf="form.get('fullName').hasError(error.type) && (form.get('fullName').dirty || form.get('fullName').touched)">
+                                {{ error.message }}
+                            </p>
+                        </div>
+                        <div *ngFor="let error of errorMessages.email" class="pt-1">
+                            <p class="alert alert-danger"
+                                *ngIf="form.get('email').hasError(error.type) && (form.get('email').dirty || form.get('email').touched)">
+                                {{ error.message }}
+                            </p>
+                        </div>
+                        <div *ngFor="let error of errorMessages.mobile" class="pt-1">
+                            <p class="alert alert-danger"
+                                *ngIf="form.get('mobile').hasError(error.type) && (form.get('mobile').dirty || form.get('mobile').touched)">
+                                {{ error.message }}
+                            </p>
+                        </div>
+                        <div *ngFor="let error of errorMessages.title" class="pt-1">
+                            <p class="alert alert-danger"
+                                *ngIf="form.get('title').hasError(error.type) && (form.get('title').dirty || form.get('title').touched)">
+                                {{ error.message }}
+                            </p>
+                        </div>
+                        <div *ngFor="let error of errorMessages.message" class="pt-1">
+                            <p class="alert alert-danger"
+                                *ngIf="form.get('message').hasError(error.type) && (form.get('message').dirty || form.get('message').touched)">
+                                {{ error.message }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" [disabled]="form.invalid">ارسال پیام</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<section id="contact" class="ftco-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="wrapper">
+                    <div class="row">
+                        <div class="col-lg-6 d-flex align-items-stretch">
+                            <div class="info-wrap w-100 p-lg-5 p-4 img">
+                                <h3 class="mb-5">راه های ارتباطی</h3>
+                                <a class="dbox w-100 d-flex align-items-start"
+                                    href="https://goo.gl/maps/hbpqLgpgwqWdLBjw8">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="bx bx-map"></i>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p>
+                                            خرم آباد مطهری خیابان آیت اله کاشانی جنب آزمایشگاه اساتید ساختمان پزشکان
+                                            جهان
+                                            طبقه سوم
+                                        </p>
+                                    </div>
+                                </a>
+                                <a href="tel://989029039091" class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="pi pi-phone"></i>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p>09029039091</p>
+                                    </div>
+                                </a>
+                                <a href="mailto:info@drehsangaravand.ir" class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="bx bx-envelope"></i>
+                                    </div>
+                                    <div class="text pl-3">
+                                        <p>info@drehsangaravand.ir</p>
+                                    </div>
+                                </a>
+                                <a href="https://drehsangaravand.ir" class="dbox w-100 d-flex align-items-center">
+                                    <div class="icon d-flex align-items-center justify-content-center">
+                                        <i class="bx bx-globe"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>drehsangaravand.ir</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="contact-wrap w-100 p-lg-5 p-4">
+                                <h3 class="mb-4">برای ما پیام ارسال کنید</h3>
+                                <form [formGroup]="form" (ngSubmit)="sendMessage()" class="contactForm">
+                                    <div class="row text-center">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="نام و نام خانوادگی"
+                                                    formControlName="fullName" class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="email" placeholder="ایمیل" formControlName="email"
+                                                    class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="موبایل" pKeyFilter="num" maxlength="11"
+                                                    minlength="11" formControlName="mobile" class="form-control"
+                                                    required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" placeholder="عنوان" formControlName="title"
+                                                    class="form-control" required />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea placeholder="پیام" formControlName="message"
+                                                    class="form-control" rows="5" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" [disabled]="form.invalid">ارسال پیام</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

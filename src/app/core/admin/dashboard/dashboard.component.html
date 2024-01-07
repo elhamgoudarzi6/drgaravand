@@ -1,0 +1,191 @@
+<p-breadcrumb [model]="[{icon:'pi pi-chevron-left',label: 'داشبرد'}]"
+    [home]="{ icon: 'pi pi-home', routerLink: '/admin/panel' }"></p-breadcrumb>
+
+<div class="px-4 py-4 md:px-6 lg:px-4">
+    <div class="grid">
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/admin/users">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">لیست کاربران</span>
+                        <div class="text-900 font-medium text-xl">24</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-blue-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-users text-blue-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">14 جدید </span>
+                <span class="text-500">در ماه اخیر</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/admin/faqs">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">سوالات متداول</span>
+                        <div class="text-900 font-medium text-xl">10</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-orange-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-question-circle text-orange-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">5 جدید</span>
+                <span class="text-500">در هفته اخیر</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/admin/contact">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">لیست پیام ها</span>
+                        <div class="text-900 font-medium text-xl">55 باز نشده</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-cyan-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-inbox text-cyan-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">120 </span>
+                <span class="text-500">پاسخ داده شده</span>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-3">
+            <div class="surface-card shadow-2 p-3 border-round cursor-pointer" routerLink="/admin/config">
+                <div class="flex justify-content-between mb-3">
+                    <div>
+                        <span class="block text-500 font-medium mb-3">تنظیمات</span>
+                        <div class="text-900 font-medium text-xl">20</div>
+                    </div>
+                    <div class="flex align-items-center justify-content-center bg-purple-100 border-round"
+                        style="width:2.5rem;height:2.5rem">
+                        <i class="pi pi-cog text-purple-500 text-xl"></i>
+                    </div>
+                </div>
+                <span class="text-green-500 font-medium">2 </span>
+                <span class="text-500">تنظیم نشده</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid mt-2">
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card cursor-pointer shadow-1">
+                <h5>تعداد کاربران</h5>
+                <p-chart type="bar" [data]="chartData"></p-chart>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card cursor-pointer shadow-1">
+                <h5>تعداد پیام ها</h5>
+                <p-chart type="line" [data]="chartData"></p-chart>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card cursor-pointer shadow-1">
+                <h5>تعداد پیام ها</h5>
+                <p-chart type="bar" [data]="chartData"></p-chart>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card cursor-pointer shadow-1">
+                <h5>تعداد پیام ها</h5>
+                <p-chart type="pie" [data]="chartData"></p-chart>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card cursor-pointer shadow-1">
+                <h5>تعداد پیام ها</h5>
+                <p-chart type="doughnut" [data]="chartData"></p-chart>
+            </div>
+        </div>
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card cursor-pointer shadow-1">
+                <h5>تعداد پیام ها</h5>
+                <p-chart type="polarArea" [data]="chartData"></p-chart>
+            </div>
+        </div>      
+
+        <div class="col-12 md:col-12 lg:col-12 xl:col-12 ">
+            <div class="card shadow-1">
+                <p-orderList [value]="products" [listStyle]="{width:'100%' ,height: '200px' }" header="لیست سفارش" filterBy="name"
+                    filterPlaceholder="جستجو">
+                    <ng-template let-product pTemplate="listItem">
+                        <div class="col-12">
+                            <div class="flex flex-column xl:flex-row xl:align-items-start gap-4">
+                                <img class="w-5 sm:w-12rem xl:w-5rem shadow-1 block xl:block mx-auto border-round"
+                                    [src]="product.image" [alt]="product.name" />
+                                <div
+                                    class="flex flex-column sm:flex-row justify-content-between align-items-center xl:align-items-start flex-1 gap-4">
+                                    <div class="flex flex-column align-items-center sm:align-items-start gap-3">
+                                        {{ product.name }}
+                                        <p-rating [iconOnStyle]="{'color':'orange'}" [readonly]="true"
+                                            [ngModel]="product.rating | number : '1.2-2'" [stars]="5" [cancel]="false">
+                                        </p-rating>
+                                    </div>
+                                    <div
+                                        class="flex sm:flex-column align-items-center sm:align-items-end gap-3 sm:gap-2">
+                                        <span>{{ product.price | number}}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p-divider></p-divider>
+                        </div>
+                    </ng-template>
+                </p-orderList>
+            </div>
+        </div>
+
+        <div class="col-12 md:col-6 lg:col-4 xl:col-4">
+            <div class="card shadow-1">
+                <div class="flex flex-column md:flex-row gap-5">
+                    <div class="flex-auto">
+                        <p-scrollPanel [style]="{ width: '100%', height: '200px' }" styleClass="custombar2">
+                            <div class="grid mt-2">
+                                <h6 class="col-12 xl:col-6">
+                                    گوشی موبایل
+                                </h6>
+                                <div class="col-12 xl:col-6">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                            <div class="grid mt-2">
+                                <h6 class="col-12 xl:col-6">
+                                    گوشی موبایل
+                                </h6>
+                                <div class="col-12 xl:col-6">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                            <div class="grid mt-2">
+                                <h6 class="col-12 xl:col-6">
+                                    گوشی موبایل
+                                </h6>
+                                <div class="col-12 xl:col-6">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                            <div class="grid mt-2">
+                                <h6 class="col-12 xl:col-6">
+                                    گوشی موبایل
+                                </h6>
+                                <div class="col-12 xl:col-6">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                            <div class="grid mt-2">
+                                <h6 class="col-12 xl:col-6">
+                                    گوشی موبایل
+                                </h6>
+                                <div class="col-12 xl:col-6">
+                                    <p-progressBar [value]="80"></p-progressBar>
+                                </div>
+                            </div>
+                        </p-scrollPanel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

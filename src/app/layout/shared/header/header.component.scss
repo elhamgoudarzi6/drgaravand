@@ -1,0 +1,132 @@
+.sticky+.mobileheader {
+  background-color: #5ac39e;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5ac39e;
+}
+
+.header img {
+  margin-right: 10px;
+  max-width: 200px;
+  filter: brightness(0) invert(1);
+}
+
+.auth-btn {
+  font-size: 14px;
+  padding: 4px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #222;
+  background-color: #fff;
+  border: 1px solid #fff;
+  font-family: IRANSans_Bold !important;
+
+}
+
+.auth-btn:hover {
+  color: #fff;
+  background-color: transparent;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-family: 'IRANSans_Bold' !important;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+
+.mobile-nav-toggle {
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mobileheader {
+  display: none;
+  padding: 5px 0;
+}
+
+.mobileheader img {
+  max-width: 180px;
+}
+
+
+
+@media (max-width: 991px) {
+  .mobileheader {
+    display: block;
+  }
+
+  .header {
+    display: none;
+  }
+}
+
+
+:host::ng-deep .p-panelmenu .p-menuitem-text {
+  font-family: 'IRANSans_Bold' !important;
+  font-size: 14px;
+  color: #fff;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header>a .p-panelmenu-header-action .p-menuitem-icon {
+  margin-left: 5px !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header {
+  margin: 5px 15px;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action {
+  font-family: IRANSans_Light !important;
+  font-size: 16px;
+  background-color: transparent !important;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 0 rgba(#5ac39e, .5);
+  background: linear-gradient(360deg, #5ac39e 0%, #356c77 100%) !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action:hover {
+  border-radius: 5px;
+  color: #fff !important;
+}
+
+:host::ng-deep .p-panelmenu .p-panelmenu-header .p-panelmenu-header-content .p-panelmenu-header-action .p-menuitem-icon {
+  margin-left: 5px;
+  color: #fff;
+  font-size: 18px;
+}
